@@ -1,0 +1,8 @@
+<div class="lecture">
+  <input type="text" [(ngModel)]="name" name="name" placeholder="Digite seu nome">
+  <input type="number" [(ngModel)]="age" name="age" placeholder="Digite sua idade">
+  <input type="submit" value="Enviar">
+
+  <p>{{ name }}</p>
+  <p *ngIf="age != 0">{{ age }}</p>
+</div>
