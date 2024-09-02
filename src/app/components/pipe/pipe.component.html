@@ -1,0 +1,6 @@
+<div class="lecture">
+  <p>Nascido em: {{ birthDate | date:'dd/MM/yyyy' }}</p>
+  <p>Nome: {{ name | titlecase }}</p>
+  <p>Saldo: {{ balance | currency:'BRL':'symbol':'1.2' }}</p>
+  <p>Profissão: {{ job | uppercase }}</p>
+</div>
