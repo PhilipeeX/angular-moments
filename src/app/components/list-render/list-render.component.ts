@@ -10,15 +10,12 @@ import { AnimalRemotionService } from 'src/app/services/animal-remotion.service'
   styleUrls: ['./list-render.component.scss']
 })
 export class ListRenderComponent implements OnInit {
-  animals: Animal[] = [
-    {name: 'Sansão', type: 'Cachorro', age: 6},
-    {name: 'Mid', type: 'Gato', age: 2},
-    {name: 'Nineco', type: 'Calopsita', age: 1},
-    {name: 'Monê', type: 'Peixe', age: 2}
-  ];
+  animals: Animal[] = [];
   animalInfo = ''
 
-  constructor(private animalRemotionService: AnimalRemotionService) { }
+  constructor(private animalRemotionService: AnimalRemotionService) {
+    this.getAnimals();
+  }
 
   ngOnInit(): void {
   }
@@ -29,5 +26,9 @@ export class ListRenderComponent implements OnInit {
 
   removeAnimal(animal: Animal) {
     this.animals = this.animalRemotionService.remove(this.animals, animal)
+  }
+
+  getAnimals(): void {
+    this.animalRemotionService.getAll().subscribe((animals) => (this.animals = animals));
   }
 }
