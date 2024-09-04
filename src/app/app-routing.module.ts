@@ -6,10 +6,12 @@ import {PipeComponent} from "./components/pipe/pipe.component";
 import {EventosComponent} from "./components/eventos/eventos.component";
 import {IfRenderComponent} from "./components/if-render/if-render.component";
 import {ChangeNumberComponent} from "./components/change-number/change-number.component";
+import {ItemDetailComponent} from "./components/item-detail/item-detail.component";
 
 const routes: Routes = [
   { path: '', component: FirstComponentComponent},
   { path: 'list', component: ListRenderComponent},
+  { path: 'list/:id', component: ItemDetailComponent },
   { path: 'pipe', component: PipeComponent},
   { path: 'events', component: EventosComponent},
   { path: 'render', component: IfRenderComponent},
