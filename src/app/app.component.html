@@ -1,11 +1,13 @@
-<h1 class="title">Hello from Philipe!</h1>
-<app-first-component></app-first-component>
-<p>testando</p>
-<app-parent-data [name]="userName" [variavelFilha]="variavelPai"></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipe></app-pipe>
-<app-two-way-binding></app-two-way-binding>
+<h1>Header</h1>
+<nav>
+  <a routerLink="/">HOME</a>
+  <a routerLink="/list">Listas</a>
+  <a routerLink="/pipe">Pipe</a>
+  <a routerLink="/events">Events</a>
+  <a routerLink="/render">If Render</a>
+  <a routerLink="/change-number">Troca numero</a>
+</nav>
+<h2 class="title">Hello from Philipe!</h2>
+
+<router-outlet></router-outlet>
+<p>footer</p>

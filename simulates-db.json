@@ -1,0 +1,28 @@
+{
+  "animals": [
+    {
+      "id": "1",
+      "name": "Leão",
+      "type": "Mamífero",
+      "age": 8
+    },
+    {
+      "id": "2",
+      "name": "Águia",
+      "type": "Ave",
+      "age": 5
+    },
+    {
+      "id": "3",
+      "name": "Tubarão",
+      "type": "Peixe",
+      "age": 12
+    },
+    {
+      "id": "4",
+      "name": "Elefante",
+      "type": "Mamífero",
+      "age": 25
+    }
+  ]
+}
