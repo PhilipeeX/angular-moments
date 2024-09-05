@@ -11,8 +11,8 @@ export class AnimalRemotionService {
 
   constructor(private http: HttpClient) { }
 
-  remove(animals: Animal[], animal: Animal) {
-    return animals.filter((a) => a.name !== animal.name);
+  remove(id: Number) {
+    return this.http.delete<Animal>(`${this.apiUrl}/${id}`)
   }
 
   getAll(): Observable<Animal[]> {
